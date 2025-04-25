@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import type { NextPage } from "next"
 import DashboardLayout from "@/components/dashboard/dashboard-layout"
 import StudyRoomDetail from "@/components/dashboard/study-room-detail"
 
@@ -7,10 +8,18 @@ export const metadata: Metadata = {
   description: "Join and collaborate in a study room",
 }
 
-export default function StudyRoomPage({ params }: { params: { id: string } }) {
+interface StudyRoomPageProps {
+  params: {
+    id: string
+  }
+}
+
+const StudyRoomPage: NextPage<StudyRoomPageProps> = ({ params }) => {
   return (
     <DashboardLayout>
       <StudyRoomDetail roomId={params.id} />
     </DashboardLayout>
   )
 }
+
+export default StudyRoomPage
