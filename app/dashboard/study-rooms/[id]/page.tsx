@@ -7,8 +7,13 @@ export const metadata: Metadata = {
   description: "Join and collaborate in a study room",
 }
 
-// In App Router, page components receive params directly
-export default function StudyRoomPage({ params }: { params: { id: string } }) {
+export default function StudyRoomPage({
+  params,
+  searchParams,
+}: {
+  params: { id: string }
+  searchParams: Record<string, string | string[] | undefined>
+}) {
   return (
     <DashboardLayout>
       <StudyRoomDetail roomId={params.id} />
