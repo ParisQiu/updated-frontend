@@ -1,21 +1,21 @@
 // app/dashboard/study-rooms/[id]/page.tsx
 // @ts-nocheck
 
-import type { Metadata } from "next"
-import DashboardLayout from "@/components/dashboard/dashboard-layout"
-import StudyRoomDetail from "@/components/dashboard/study-room-detail"
+// import type { Metadata } from "next"
+// import DashboardLayout from "@/components/dashboard/dashboard-layout"
+// import StudyRoomDetail from "@/components/dashboard/study-room-detail"
 
-export const metadata: Metadata = {
-  title: "Study Room | StudySmarter",
-  description: "Join and collaborate in a study room",
-}
+// export const metadata: Metadata = {
+//   title: "Study Room | StudySmarter",
+//   description: "Join and collaborate in a study room",
+// }
 
-export default function StudyRoomPage(props: any) {
-  const roomId = props.params?.id as string
+// export default function StudyRoomPage(props: any) {
+//   const roomId = props.params?.id as string
 
-  return (
-    <DashboardLayout>
-      <StudyRoomDetail roomId={roomId} />
-    </DashboardLayout>
-  )
-}
+//   return (
+//     <DashboardLayout>
+//       <StudyRoomDetail roomId={roomId} />
+//     </DashboardLayout>
+//   )
+// }
