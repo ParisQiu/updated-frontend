@@ -1,5 +1,5 @@
 // app/dashboard/study-rooms/[id]/page.tsx
-// @ts-nocheck
+
 
 // import type { Metadata } from "next"
 // import DashboardLayout from "@/components/dashboard/dashboard-layout"
